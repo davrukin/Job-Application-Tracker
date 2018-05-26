@@ -8,4 +8,8 @@ import android.arch.persistence.room.PrimaryKey
 data class User(
     @PrimaryKey var name: String,
     @ColumnInfo(name = "applications") var applications: ArrayList<JobApplication>
-)
+) {
+    companion object {
+
+    }
+}
